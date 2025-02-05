@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tags</title>
+</head>
+<body>
+    <h1>Form tags </h1>
+    <form action="#">
+        <label for="Name">First Name:</label>
+        <input type="text" id="Name" placeholder="Name"  required>
+        <br><hr>
+        <label for="Last">Last Name:</label>
+        <input type="text" id="Last" placeholder="Surname">
+        <br><hr>
+        <label for="DOB">Date Of Birth:</label>
+        <input type="date"  id="DOB">
+        <br><hr>
+        <label >Gender:</label>
+        
+        <label for="Male">
+            <input type="radio"  id="Male" value="Male" name="Gender" >Male
+        </label>
+        <label for="Female">
+            <input type="radio"  id="Female" value="Female" name="Gender">Female
+        </label>
+        <label for="other">
+            <input type="radio"  id="other" value="Other" name="Gender">Other
+        </label>
+        <hr>
+        <label>Category:</label>
+        <select>
+            <option value="Open">Open/Genral</option>
+            <option value="Obc">OBC</option>
+            <option value="Sc">SC/ST</option>
+            <option value="Ews">EWS</option>
+        </select>
+        <hr>
+        <label>You Know Language:</label>
+        <label for="Hindi">
+            <input type="checkbox" name="Language" id="Hindi">Hindi
+        </label>
+        <label for="English">
+            <input type="checkbox" name="Language" id="English">English
+        </label>
+        <label for="Marthi">
+            <input type="checkbox" name="Language" id="Marthi">Marthi
+        </label>
+        <label for="Tamil">
+            <input type="checkbox" name="Language" id="Tamil">Tamil
+        </label>
+        <hr>
+        <label>Photo Upload:</label>
+        <label for="Photo">
+            <input type="file" name="Photo" id="Photo">
+        </label>
+        <hr>
+        <label >Tell me Yourself:</label>
+        <label for="Yourself">
+            <textarea  id="Yourself" rows="10" cols="25" placeholder="Example, I am Rohit Gupta"></textarea>
+        </label>
+        <hr>
+        <label for="Email">Email: </label>
+        <input type="email" name="email" id="Email" placeholder="guptarohit@gmail.com" required>
+        <br>
+        <label for="Password">Enter Your Password: </label>
+        <input type="password" name="" id="Password" placeholder="Ravi&2003" required>
+
+        <hr>
+        <label for="terms">
+            <input type="checkbox" name="Terms" id="terms" required>I agree to the terms and condition
+        </label>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        
+
+
+        
+
+    
+        
+
+
+
+
+    </form>
+</body>
+</html>

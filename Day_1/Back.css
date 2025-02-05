@@ -1,0 +1,539 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: whitesmoke; */
+    font-size: 20px;
+}
+
+.section1{
+    width: 100%;
+    height: 60px;
+    /* background-color: aqua; */
+}
+#logo{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width:60px;
+    height: 30px;
+
+    
+}
+ul{
+    width: 100%;
+    height:30px;
+    /* background-color: blue; */
+    text-align: center;
+}
+li{
+    display: inline;
+    padding-right: 15px;
+}
+ ul li a{
+    text-decoration: none;
+    color: black; 
+}
+ ul li a:hover{
+    text-decoration: underline;
+    
+}
+.section2{
+    width:100%;
+    height: 400px;
+    /* text-align: center;
+    color: white; */
+    /* background-color: blue; */
+    background:url(Banner.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    /* background-size: cover; */
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;   
+}
+  
+.section2 h1{
+    font-weight: bold;
+    font-size: 50px;
+    /* background-color: black; */
+}
+.section2 p{
+    font-size: 18px;
+}
+.about{
+    width: 100%;
+    height: 250px;
+    padding: 50px 20px;
+    /* max-width: 900px; */
+    text-align: center;
+    /* background-color: blueviolet; */
+}
+.about h2{
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.about p{
+    font-size: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.card{
+    width: 100%;
+    /* height: 500px; */
+    text-align: center;
+    /* background-color: lightsteelblue; */
+    padding-left: 50px;
+    padding-right: 50px;
+    /* padding-bottom: 50px; */
+
+}
+.card h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    /* background-color: blanchedalmond; */
+}
+.Allcard{
+    width: 100%;
+    
+    /* margin: 10px; */
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.card1{
+    background-color: wheat;
+    padding: 20px;
+    width: 32%;
+    /* height: 370px; */
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    
+}
+.card1 img{
+    width: 100%;
+    height: 300px;
+    /* border-radius: 10px; */
+    /* object-fit: cover; */
+    
+}
+.card1 h3{
+    border-bottom: 1px solid black;
+    
+}
+.card1 p{
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    font-size: 16px;
+    text-align: justify;
+    /* font-weight: bold; */
+}
+.card1 h3{
+    font-size: 20px;
+    margin: 10px 10px;
+    
+}
+.card1 p br{
+    padding-top: 12px;
+}
+
+.card1 h6{
+    text-align: center;
+    padding-top: 10px;
+}
+ /* .card1{
+    width:250px;
+    height: 350px;
+    background-color: azure;
+}
+.card1 img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card2{
+    width:250px;
+    height: 350px;
+    background-color: azure;
+}
+.card3{
+    width:250px;
+    height: 350px;
+    background-color: azure;
+}   */
+
+footer{
+    width: 100%;
+    /* background-color: gray; */
+    background-color: black;
+    color: white;
+    /* margin-top: 30px; */
+    padding:40px;
+
+}
+footer h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+footer ul li{
+    font-size: 20px;
+    padding-right: 25px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+    
+}
+
+/* ------------------------------------------------------------------- */
+@media (min-width:426px)and (max-width:520px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .section1{
+        width: 100%;
+        /* background-color: aqua; */
+    }
+    .section2{
+        width: 100%;
+        height: 300px;
+        background-size: 100% 300px;
+        
+    }
+    .section2 p{
+        font-size: 16px;
+    }
+    .about{
+        width: 100%;
+        height: 450px;
+    }
+    .about h2{
+        color: blueviolet;
+    }
+    .about p{
+        font-size: 15px;
+        text-align: justify;
+
+    }
+    .card{
+        width: 100%;
+
+    }
+    .card h2{
+        color: blueviolet;
+    }
+    .Allcard{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .card1{
+        width: auto;
+    }
+}
+/* ------------Tablet ---------------------------- */
+@media (min-width:520px) and (max-width:768px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .section1{
+        /* background-color:gray; */
+    }
+    .about{
+        width: 100%;
+        height: auto;
+        background-color: antiquewhite;
+        padding: 30px;
+        
+    }
+    .about h2{
+        border-bottom:2px solid black ;
+    }
+    .about p{
+        text-align: justify;
+    }
+    .section2{
+        width: 100%;
+        height: 324px;
+        background-size: 100% 324px;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        /* background-color: brown; */
+    }
+    .card h2{
+        border-bottom:2px solid salmon ;
+    }
+    .Allcard{
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .card1{
+        width: 45%;
+        height: auto;
+    }
+    
+}
+/* Mobile L size ------------------------------------------------- */
+@media (min-width:376px) and (max-width:425px){
+    .section1{
+        width: 100%;
+        height: 55px;
+        background-color: whitesmoke;
+        
+    }
+    .section2{
+        width: 100%;
+        height: 290px;
+        background-size: 100% 290px;
+    }
+    .section2 h1{
+        font-size: 30px;
+    }
+    .section2 p{
+        font-size: 14px;
+    }
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 13px;
+    }
+    .about h2{
+        font-size: 26px;
+        /* white-space: nowrap; */
+        border-bottom: 1px solid black;
+    }
+    .about p{
+        font-size: 15px;
+        text-align: justify;
+        padding: 3px;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    .card h2{
+        font-size: 26px;
+        border-bottom: 1px solid black;
+    }
+    .Allcard{
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        
+    }
+    .card1{
+        width: 90%;
+        height: auto;
+        /* padding: 3px; */
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+    footer h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    footer ul li{
+        padding: 0px;
+        
+    }
+    footer ul li a{
+        font-size: 14px;
+        padding-right: 12px;
+    }
+
+}
+@media (min-width:321px) and (max-width:375px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .section1{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    
+    .section1 ul li a{
+        font-size: 15px;
+    }
+    .section2{
+        width: 100%;
+        height: 200px;
+        background-size: 100% 200px;
+    }
+   .section2 h1{
+        font-size: 24px;
+    }
+   .section2 p{
+        font-size: 10px;
+    }
+   .about {
+        width: 100%;
+        height: auto;
+        padding: 15px 10px;
+    }
+    .about h2{
+        font-size: 22px;
+        border-bottom:1px solid black
+    }
+    .about p{
+        text-align: justify;
+        font-size: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .card{
+        width:100%;
+        height: auto;
+        padding: 10px;
+    }
+    .card h2{
+        font-size: 22px;
+        border-bottom: 1px solid black;
+        /* margin-right: 15px;
+        margin-left: 15px; */
+        margin-bottom: 10px;
+    }
+    .Allcard{
+        width: 100%;
+        height: auto;
+
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    footer {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        
+        
+    }
+    footer h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    footer ul li a {
+        font-size: 12px;
+        padding-right: 6px;
+    }
+
+}
+/* Mobile small size Responsive---------------------------------------------- */
+@media (min-width:1px) and (max-width:320px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .section1{
+        width: 100%;
+        height: 60px;
+    }
+    .section1 ul li a{
+        font-size: 13px;
+
+    }
+    .section2{
+        width: 100%;
+        height: 200px;
+        background-size: 100% 200px;
+    }
+    .section2 h1{
+        font-size: 20px;
+    }
+    .section2 p{
+        font-size: 8px;
+    }
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+    }
+    .about h2{
+        font-size: 20px;
+        border-bottom:1px solid black;
+
+    }
+    .about p{
+        text-align: justify;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .card h2{
+        font-size: 20px;
+        border-bottom: 1px solid black;
+    }
+    .Allcard{
+        width: 100%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .card1{
+        width: 100%;
+        height:auto;
+    }
+    footer{
+        width: 100%;
+        height:auto;
+        padding: 5px;
+    }
+    footer h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    /* footer ul{
+
+        padding-right: 7px;
+    } */
+    footer ul li{
+        padding: 5px;
+    }
+    footer ul li a{
+        font-size: 11px;
+        padding-right: 2px;
+    }
+
+}
+    

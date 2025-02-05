@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    background-color:#9CF4BE;
+    border-bottom: 5px solid blueviolet;
+    border-top: 5px solid brown;
+    transition-duration: 2s;
+    /* transition-timing-function: ease-in;
+    transition-delay: 1s; */
+    
+}
+h1:hover{
+    background-color: whitesmoke;
+    border: none;
+    color: darkorchid;
+    
+}
+.section{
+    padding: 25px;
+    width: 100%;
+    height: 60%;
+    background-color:#FFEF9F;
+    display: flex;
+    justify-content: center;
+    /* transition-duration: 2s; */
+}
+.section:hover{
+    background-color: burlywood;
+    border-left: 5px solid blueviolet;
+    border-right: 5px solid blueviolet;
+    border-bottom: 5px solid blueviolet;
+}
+form{
+    background-color: coral;
+    border: 5px solid wheat;
+    /* transition-duration: 2s; */
+    width: 60%;
+   padding: 20px;
+    
+    
+}
+form:hover{
+    border: 4px soild white;
+    background-color: #FFEF9F;
+    color: navy;
+    
+}
+/* form > button{
+    text-align: center;
+    margin-right: 50%;
+} */
+ form label input{
+    text-align: center;
+ }
+form label {
+    font-weight: bold;
+    /* display: flex; */
+   
+}
+
+form  input {
+    /* width: 220px; */
+    border-radius: 8px;
+    padding: 6px;
+}
+.terms{
+    display: flex;
+    justify-content: center;
+    /* padding-right: 5px; */
+    
+}
+
+.Btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 200px;
+    height: 25px;
+}
+button:hover{
+    font-size: 23px;
+    font-weight: bolder;
+    color: burlywood;
+    background-color: black;
+    border-radius: 20px;
+}
+/* .rg input{
+    width: 100%;
+   
+} */
+.rg input{
+    margin-right: 40px;
+    width: 220px;
+}
+.rg1 input{
+    margin-right: 30px;
+    width: 220px;
+}
+/* .rg{
+    display: flex;
+    justify-content: center;
+
+}
+.rg label {
+    display: flex;
+}
+.rg input{
+    display: flex;
+    
+} */
+
+/* Reponsive Mobile size 0-600px------------------------------------------- */
+
+@media (max-width: 500px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1{
+        color: crimson;
+        background-color: khaki;
+        animation-name: font;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+    }
+    @keyframes font {
+        from{color: purple;}
+        to {color:rgb(20, 187, 14)}
+        
+    }
+    .section{
+        background-color: gold;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /* .section:hover{
+        background-color: gold;
+    } */
+
+    form{
+        background-color: palegreen;
+        flex-wrap: wrap;
+
+        
+    }
+  
+    
+}
