@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoring_TAvsTB</title>
+    <link rel="stylesheet" href="scoring7.css">
+</head>
+<body>
+    <h1>MATCH DAY </h1>
+    <div class="boxx">
+        <div class="box1">
+            <h3>TEAM A</h3>
+            <p>Show the Score</p>
+            <p id="a">0</p>
+            <button id="btn1" onclick="myfun1()">+</button>
+            <button id="btn2" onclick="myfun2()">-</button>
+        </div>
+        <div class="box2">
+            <h3>TEAM B</h3>
+            <p>Show the Score</p>
+            <p id="b">0</p>
+            <button id="btn11" onclick="myfun11()">+</button>
+            <button id="btn22" onclick="myfun22()">-</button>
+        </div>     
+    </div>
+    <div class="finalbox">
+        <h1>RESULT DECLARED</h1>
+        <div class="box3" >     
+            <p id="won">Live Scoring wait for Scoring</p>
+        </div>
+    </div>
+
+    <script>
+        let scoreA =0;
+        function myfun1(){
+            
+            document.getElementById("a").innerHTML=scoreA;
+            scoreA++;
+            winner();
+        }
+        function myfun2(){
+            document.getElementById("a").innerHTML=scoreA;
+            scoreA--;
+            winner();
+        }
+        let scoreB =0;
+        function myfun11(){
+            document.getElementById("b").innerHTML=scoreB;
+            scoreB++;
+            winner();
+            
+        }
+        function myfun22(){
+            document.getElementById("b").innerHTML=scoreB;
+            scoreB--;
+            winner();
+        }
+
+        let win;
+        function winner(){
+            if (scoreA == 11){
+                win = "Team A is Winner and Team B Is Loss"
+                document.getElementById("won").innerHTML=win;
+            }
+            else if(scoreB == 11){
+                win = "Team B is Winner and Team A Is Loss"
+                document.getElementById("won").innerHTML=win;
+            }
+            
+        }
+
+
+
+
+
+
+
+        // function winner1(){
+        //     if (scoreA === 10){
+        //         alert("Team A is win");
+                
+        //     }
+        //     else if (scoreB == 10){
+        //         alert("Team B is win");
+        //     }
+        // }
+
+    </script>
+</body>
+</html>
